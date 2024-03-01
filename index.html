@@ -1,1 +1,16 @@
+<!doctype html>
+<html>
+ <a style="cursor:pointer" onclick="popup('./main/index.html')">press to enter site</a>
+</html>
+<script>
+//resizes an iframe based on how tall the content inside of it is. Used for the sidebar.
+function resizeIframe(obj){
+  obj.height = (obj.contentWindow.document.body.scrollHeight + 20);
+}
+
+//make a popup window
+function popup(url) {
+  popupWindow = window.open(url, 'popUpWindow', 'height=700,width=1000,left=50,top=50,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
+}
+</script>
 
